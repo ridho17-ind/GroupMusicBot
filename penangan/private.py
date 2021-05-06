@@ -9,23 +9,23 @@ from helpers.filters import other_filters2
 async def start(_, message: Message):
     await message.reply_sticker("CAACAgQAAx0CTv65QgABBfJlYF6VCrGMm6OJ23AxHmD6qUSWESsAAhoQAAKm8XEeD5nrjz5IJFYeBA")
     await message.reply_text(
-        f"""**Hey, I'm {bn} 🎵
+        f"""**Hey, I'm {Skyzo Music Bot} 🎵
 
-I can play music in your group's voice call. Developed by [Jason](https://t.me/ImJanindu).
+I can play music in your group's voice call🥴. Developed by [Skyzo](https://t.me/SkyzoGanss).
 
-Add me to your group and play music freely!**
+Add me to your group and play music freely guys!**
         """,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "🛠 Source Code 🛠", url="https://github.com/ImJanindu/GroupMusicBot")
+                        "🛠 Group Support 🛠", url="https://t.me/skyzomusicbot")
                   ],[
                     InlineKeyboardButton(
-                        "💬 Group", url="https://t.me/InfinityBOTs_Support"
+                        "💬 Group", url="https://t.me/skyzomusicbot"
                     ),
                     InlineKeyboardButton(
-                        "🔊 Channel", url="https://t.me/Infinity_BOTs"
+                        "🔊 Channel", url="https://t.me/skyzomusicbot"
                     )
                 ],[ 
                     InlineKeyboardButton(
@@ -38,12 +38,12 @@ Add me to your group and play music freely!**
 
 @Client.on_message(filters.command("start") & ~filters.private & ~filters.channel)
 async def gstart(_, message: Message):
-      await message.reply_text("""**Group Music Player Online ✅**""",
+      await message.reply_text("""**Skyzo Music Bot Online ✅**""",
       reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "🔊 Channel", url="https://t.me/Infinity_BOTs")
+                        "🔊 Devoloper", url="https://t.me/SkyzoGanss")
                 ]
             ]
         )
